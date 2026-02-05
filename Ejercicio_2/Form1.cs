@@ -6,5 +6,16 @@ namespace Ejercicio_2
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Aceptar_Click(object sender, EventArgs e)
+        {
+            string texto = "Texto cambiado!";
+            lbl_Texto.Text = texto;
+        }
     }
 }
