@@ -22,10 +22,17 @@ namespace Ejercicio_9
             string valorTexbox = txt_Valor.Text;
             if (int.TryParse(valorTexbox, out int numero))
 
-                 lbl_Valor.Text = $"El valor ingresado es numerico. El valor ingresado es:{valorTexbox}";
+                lbl_Valor.Text = $"El valor ingresado es numerico. El valor ingresado es: {valorTexbox}";
 
             else
                 lbl_Valor.Text = $"-- ERROR -- : valor ingresado no es numerico";
+
+        }
+
+        private void btn_Limpiar_Click(object sender, EventArgs e)
+        {
+            txt_Valor.Clear();
+            lbl_Valor.Text = string.Empty;  
 
         }
     }

@@ -32,6 +32,7 @@
             btn_Validar = new Button();
             label1 = new Label();
             lbl_Valor = new Label();
+            btn_Limpiar = new Button();
             SuspendLayout();
             // 
             // txt_Valor
@@ -58,11 +59,11 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(220, 40);
+            label1.Location = new Point(266, 47);
             label1.Name = "label1";
-            label1.Size = new Size(470, 28);
+            label1.Size = new Size(260, 28);
             label1.TabIndex = 2;
-            label1.Text = "Ingresa solamente un valor o caracter numerico:";
+            label1.Text = "Ingresa un valor numerico";
             label1.Click += label1_Click;
             // 
             // lbl_Valor
@@ -74,12 +75,25 @@
             lbl_Valor.Size = new Size(0, 28);
             lbl_Valor.TabIndex = 3;
             // 
+            // btn_Limpiar
+            // 
+            btn_Limpiar.BackColor = SystemColors.ActiveBorder;
+            btn_Limpiar.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_Limpiar.Location = new Point(615, 137);
+            btn_Limpiar.Name = "btn_Limpiar";
+            btn_Limpiar.Size = new Size(120, 46);
+            btn_Limpiar.TabIndex = 4;
+            btn_Limpiar.Text = "Limpiar";
+            btn_Limpiar.UseVisualStyleBackColor = false;
+            btn_Limpiar.Click += btn_Limpiar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_Limpiar);
             Controls.Add(lbl_Valor);
             Controls.Add(label1);
             Controls.Add(btn_Validar);
@@ -97,5 +111,6 @@
         private Button btn_Validar;
         private Label label1;
         private Label lbl_Valor;
+        private Button btn_Limpiar;
     }
 }
