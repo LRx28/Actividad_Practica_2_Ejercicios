@@ -6,5 +6,10 @@ namespace Ejercicio_10
         {
             InitializeComponent();
         }
+
+        private void btn_Precionar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hola, Soy Luis Ramon SD-2023-05952");
+        }
     }
 }

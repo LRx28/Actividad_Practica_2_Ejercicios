@@ -28,12 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btn_Precionar = new Button();
+            label1 = new Label();
+            SuspendLayout();
+            // 
+            // btn_Precionar
+            // 
+            btn_Precionar.BackColor = SystemColors.Info;
+            btn_Precionar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_Precionar.Location = new Point(297, 166);
+            btn_Precionar.Name = "btn_Precionar";
+            btn_Precionar.Size = new Size(173, 78);
+            btn_Precionar.TabIndex = 0;
+            btn_Precionar.Text = "Precionar";
+            btn_Precionar.UseVisualStyleBackColor = false;
+            btn_Precionar.Click += btn_Precionar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(126, 65);
+            label1.Name = "label1";
+            label1.Size = new Size(522, 31);
+            label1.TabIndex = 1;
+            label1.Text = "Preciona el boton para ver el mensaje emergente";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(800, 450);
+            Controls.Add(label1);
+            Controls.Add(btn_Precionar);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btn_Precionar;
+        private Label label1;
     }
 }
