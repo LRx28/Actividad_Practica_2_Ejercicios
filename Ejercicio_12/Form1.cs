@@ -19,9 +19,16 @@ namespace Ejercicio_12
             catch (Exception x)
             {
 
-                MessageBox.Show("Error: Ingresa valores numericos: " +x);
+                MessageBox.Show("Error: Ingresa valores numericos: " + x);
             }
-            
+
+        }
+
+        private void btn_Limpiar_Click(object sender, EventArgs e)
+        {
+            txb_Grados.Clear();
+            lbl_Resultado.Text = string.Empty;
         }
     }
 }
+    

@@ -35,6 +35,7 @@
             txb_Grados = new TextBox();
             lbl_Resultado = new Label();
             label2 = new Label();
+            btn_Limpiar = new Button();
             SuspendLayout();
             // 
             // lbl_Celsius
@@ -106,12 +107,25 @@
             label2.TabIndex = 6;
             label2.Text = "Ingresa los grados a calcular:";
             // 
+            // btn_Limpiar
+            // 
+            btn_Limpiar.BackColor = SystemColors.Info;
+            btn_Limpiar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_Limpiar.Location = new Point(524, 243);
+            btn_Limpiar.Name = "btn_Limpiar";
+            btn_Limpiar.Size = new Size(123, 46);
+            btn_Limpiar.TabIndex = 7;
+            btn_Limpiar.Text = "Limpiar";
+            btn_Limpiar.UseVisualStyleBackColor = false;
+            btn_Limpiar.Click += btn_Limpiar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_Limpiar);
             Controls.Add(label2);
             Controls.Add(lbl_Resultado);
             Controls.Add(txb_Grados);
@@ -134,5 +148,6 @@
         private TextBox txb_Grados;
         private Label lbl_Resultado;
         private Label label2;
+        private Button btn_Limpiar;
     }
 }
