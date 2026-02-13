@@ -304,6 +304,7 @@
             btn_Igual.TabIndex = 34;
             btn_Igual.Text = "=";
             btn_Igual.UseVisualStyleBackColor = false;
+            btn_Igual.Click += btn_Igual_Click;
             // 
             // Form1
             // 

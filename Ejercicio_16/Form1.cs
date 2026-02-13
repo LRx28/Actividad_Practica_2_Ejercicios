@@ -165,5 +165,33 @@ namespace Ejercicio_16
             num_1 = Convert.ToDouble(txt_Contenido.Text);
             txt_Contenido.Text = "0";
         }
+
+        private void btn_Igual_Click(object sender, EventArgs e)
+        {
+            num_2 = Convert.ToDouble(txt_Contenido.Text);
+            switch (operador)
+            {
+                case "+":
+                    txt_Contenido.Text = Convert.ToString(num_1 + num_2);
+                    break;
+                case "-":
+                    txt_Contenido.Text = Convert.ToString(num_1 - num_2);
+                    break;
+                case "*":
+                    txt_Contenido.Text = Convert.ToString(num_1 * num_2);
+                    break;
+                case "/":
+                    if (num_2 == 0)
+                    {
+                        MessageBox.Show("No se puede dividir entre cero");
+                        txt_Contenido.Text = "0";
+                    }
+                    else
+                    {
+                        txt_Contenido.Text = Convert.ToString(num_1 / num_2);
+                    }
+                    break;
+            }
+        }
     }
 }
