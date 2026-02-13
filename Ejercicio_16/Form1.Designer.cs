@@ -96,6 +96,7 @@
             btn_Suma.TabIndex = 6;
             btn_Suma.Text = "+";
             btn_Suma.UseVisualStyleBackColor = false;
+            btn_Suma.Click += btn_Suma_Click;
             // 
             // btn_2
             // 
@@ -238,6 +239,7 @@
             btn_Resta.TabIndex = 29;
             btn_Resta.Text = "-";
             btn_Resta.UseVisualStyleBackColor = false;
+            btn_Resta.Click += btn_Resta_Click;
             // 
             // btn_Multiplicacion
             // 
@@ -250,6 +252,7 @@
             btn_Multiplicacion.TabIndex = 30;
             btn_Multiplicacion.Text = "*";
             btn_Multiplicacion.UseVisualStyleBackColor = false;
+            btn_Multiplicacion.Click += btn_Multiplicacion_Click;
             // 
             // btn_Dividir
             // 
@@ -262,6 +265,7 @@
             btn_Dividir.TabIndex = 31;
             btn_Dividir.Text = "/";
             btn_Dividir.UseVisualStyleBackColor = false;
+            btn_Dividir.Click += btn_Dividir_Click;
             // 
             // btn_Borrar
             // 

@@ -134,7 +134,36 @@ namespace Ejercicio_16
 
         private void btn_0_Click(object sender, EventArgs e)
         {
-            txt_Contenido.Text = txt_Contenido.Text + "0";   
+            txt_Contenido.Text = txt_Contenido.Text + "0";
+        }
+
+        private void btn_Suma_Click(object sender, EventArgs e)
+        {
+            operador = "+";
+            num_1 = Convert.ToDouble(txt_Contenido.Text);
+            txt_Contenido.Text = "0";
+
+        }
+
+        private void btn_Resta_Click(object sender, EventArgs e)
+        {
+            operador = "-";
+            num_1 = Convert.ToDouble(txt_Contenido.Text);
+            txt_Contenido.Text = "0";
+        }
+
+        private void btn_Multiplicacion_Click(object sender, EventArgs e)
+        {
+            operador = "*";
+            num_1 = Convert.ToDouble(txt_Contenido.Text);
+            txt_Contenido.Text = "0";
+        }
+
+        private void btn_Dividir_Click(object sender, EventArgs e)
+        {
+            operador = "/";
+            num_1 = Convert.ToDouble(txt_Contenido.Text);
+            txt_Contenido.Text = "0";
         }
     }
 }
